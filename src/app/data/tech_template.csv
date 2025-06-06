@@ -1,0 +1,13 @@
+id,name,description,cost_gold,cost_gems,cost_lumber,cost_stone,cost_researchPoints,effect_types,effect_amounts,effect_facilityIds,requirement_types,requirement_ids,requirement_levels,icon_path,repeatable,costMultiplier,maxLevel
+tech_mining_1,Mining Tech 1,Increases mining production by 50%,100,100,0,0,100,production,1.5,mine,,,,images/techs/icon_tech_mining_1.png,true,1.5,10
+tech_mining_2,Mining Tech 2,Increases mining production by 100%,200,200,0,0,200,production,2,mine,tech,tech_mining_1,5,images/techs/icon_tech_mining_2.png,true,2,10
+tech_lumber_1,Lumber Tech 1,Increases lumber production by 50%,100,100,0,0,100,production,1.5,lumberMill,,,,images/techs/icon_tech_lumber_1.png,true,1.5,10
+tech_lumber_2,Lumber Tech 2,Increases lumber production by 100%,200,200,0,0,200,production,2,lumberMill,tech,tech_lumber_1,5,images/techs/icon_tech_lumber_2.png,true,2,10
+tech_quarry_1,Quarry Tech 1,Increases stone production by 50%,100,100,0,0,100,production,1.5,quarry,,,,images/techs/icon_tech_quarry_1.png,true,1.5,10
+tech_quarry_2,Quarry Tech 2,Increases stone production by 100%,200,200,0,0,200,production,2,quarry,tech,tech_quarry_1,5,images/techs/icon_tech_quarry_2.png,true,2,10
+tech_research_1,Research Tech 1,Increases research point generation by 50%,150,150,0,0,150,production,1.5,library,,,,images/techs/icon_tech_library_1.png,true,1.5,10
+tech_research_2,Research Tech 2,Increases research point generation by 100%,300,300,0,0,300,production,2,library,tech,tech_research_1,5,images/techs/icon_tech_library_2.png,true,2,10
+tech_military_1,Military Tech 1,Increases unit capacity by 50%,200,200,0,0,200,capacity,1.5,barracks,,,,images/techs/icon_tech_barracks_1.png,true,1.5,10
+tech_military_2,Military Tech 2,Increases unit capacity by 100%,400,400,0,0,400,capacity,2,barracks,tech,tech_military_1,5,images/techs/icon_tech_barracks_2.png,true,2,10
+tech_housing_1,Housing Tech 1,Increases population capacity by 50%,50,50,0,0,50,capacity,1.5,housing,,,,images/techs/icon_tech_housing_1.png,true,1.5,10
+tech_housing_2,Housing Tech 2,Increases population capacity by 100%,100,100,0,0,100,capacity,2,housing,tech,tech_housing_1,5,images/techs/icon_tech_housing_2.png,true,2,10 

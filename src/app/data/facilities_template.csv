@@ -1,0 +1,8 @@
+id,name,description,category,base_gold,base_gems,base_resources,construction_time,max_level,repeatable,production_type,production_amount,production_resource,production_interval,base_capacity,base_efficiency,req_population,req_facilities,req_research,icon_path
+mine,Mine,Extracts valuable resources from the mountain. Each level increases gold production.,production,100,0,lumber:50|stone:100,2,50,true,resource,20,gold,1,,1,5,,,images/facilities/icon_mine.png
+lumberMill,Lumber Mill,Processes wood into lumber. Each level increases lumber production.,production,100,0,lumber:50|stone:100,2,50,true,resource,20,lumber,1,,1,1,,,images/facilities/icon_sawmill.png
+quarry,Quarry,Extracts stone from the mountain. Each level increases stone production.,production,100,0,stone:50|lumber:100,2,50,true,resource,20,stone,1,,1,1,,,images/facilities/icon_quarry.png
+library,Library,Research new technologies and improvements. Each level increases research output.,research,150,0,lumber:100|stone:50,5,50,true,resource,1,researchPoints,1,,1,3,,,images/facilities/icon_library.png
+barracks,Barracks,Train and equip military units. Each level increases unit capacity.,military,200,0,lumber:150|stone:200,7,4,false,,,5,1,5,1,10,library:2,tech_military_1:1,images/facilities/icon_barracks.png
+housing,Housing,Provides living space for your population. Each level increases population capacity.,population,50,0,lumber:100,2,50,true,,,10,1,10,1,1,,,images/facilities/icon_housing.png
+forge,Forge,Crafts equipment. Each level increases crafting output.,crafting,100,0,lumber:100|stone:100,4,50,true,resource,1,equipment,1,,1,1,,tech_crafting_1:1,images/facilities/icon_forge.png
