@@ -26,8 +26,8 @@ const LeftInfoArea: React.FC = () => {
 
     const goldCost = upgradeCost.gold > 0 ? `${upgradeCost.gold} gold` : '';
     const gemsCost = upgradeCost.gems > 0 ? `${upgradeCost.gems} gems` : '';
-    const lumberCost = upgradeCost.resources?.lumber > 0 ? `${upgradeCost.resources?.lumber} lumber` : '';
-    const stoneCost = upgradeCost.resources?.stone > 0 ? `${upgradeCost.resources?.stone} stone` : '';
+    const lumberCost = upgradeCost.resources && upgradeCost.resources.lumber > 0 ? `${upgradeCost.resources.lumber} lumber` : '';
+    const stoneCost = upgradeCost.resources && upgradeCost.resources.stone > 0 ? `${upgradeCost.resources.stone} stone` : '';
 
     const productionAmount = targetData.baseProduction?.amount || 0;
     const productionEfficiency = targetData.baseEfficiency || 1;
