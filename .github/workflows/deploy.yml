@@ -45,13 +45,13 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Create .nojekyll file
-        run: touch ./public/.nojekyll
+        run: touch ./out/.nojekyll
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./out
 
   deploy:
     environment:
