@@ -2,6 +2,11 @@ import Image from "next/image";
 
 const imageScale = 32;
 
+// Helper function to handle image paths
+const getImagePath = (path: string) => {
+    return path.startsWith('/') ? path : `/${path}`;
+};
+
 export interface Tech {
     id: string;
     name: string;
@@ -52,8 +57,8 @@ export const techs: { [key: string]: Tech } = {
             }
         ],
         requirements: [],
-        icon: <Image src={"/images/techs/icon_tech_mining_1.png"} alt="Mining Tech 1" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/techs/icon_tech_mining_1.png"} alt="Mining Tech 1" width={imageScale * 4} height={imageScale * 4} />,
+        icon: <Image src={getImagePath("images/techs/icon_tech_mining_1.png")} alt="Mining Tech 1" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/techs/icon_tech_mining_1.png")} alt="Mining Tech 1" width={imageScale * 4} height={imageScale * 4} />,
         repeatable: true,
         costMultiplier: 1.5,
         maxLevel: 10,
@@ -86,8 +91,8 @@ export const techs: { [key: string]: Tech } = {
                 level: 5
             }
         ],
-        icon: <Image src={"/images/techs/icon_tech_mining_2.png"} alt="Mining Tech 2" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/techs/icon_tech_mining_2.png"} alt="Mining Tech 2" width={imageScale * 4} height={imageScale * 4} />,
+        icon: <Image src={getImagePath("images/techs/icon_tech_mining_2.png")} alt="Mining Tech 2" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/techs/icon_tech_mining_2.png")} alt="Mining Tech 2" width={imageScale * 4} height={imageScale * 4} />,
         repeatable: true,
         costMultiplier: 2,
         maxLevel: 10,

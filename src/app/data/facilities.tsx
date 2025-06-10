@@ -2,6 +2,11 @@ import Image from "next/image";
 
 const imageScale = 32;
 
+// Helper function to handle image paths
+const getImagePath = (path: string) => {
+    return path.startsWith('/') ? path : `/${path}`;
+};
+
 export interface FacilityCost {
     gold: number;
     gems: number;
@@ -113,8 +118,8 @@ export const facilities: { [key: string]: Facility } = {
         requirements: {
             population: 5
         },
-        icon: <Image src={"/images/facilities/icon_mine.png"} alt="Mine" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_mine.png"} alt="Mine" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_mine.png")} alt="Mine" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_mine.png")} alt="Mine" width={imageScale*4} height={imageScale*4} />
     },
     "lumberMill": {
         id: "lumberMill",
@@ -143,8 +148,8 @@ export const facilities: { [key: string]: Facility } = {
         requirements: {
             population: 1
         },
-        icon: <Image src={"/images/facilities/icon_sawmill.png"} alt="Lumber Mill" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_sawmill.png"} alt="Lumber Mill" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_sawmill.png")} alt="Lumber Mill" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_sawmill.png")} alt="Lumber Mill" width={imageScale*4} height={imageScale*4} />
     },
     "quarry": {
         id: "quarry",
@@ -173,8 +178,8 @@ export const facilities: { [key: string]: Facility } = {
         requirements: {
             population: 1
         },
-        icon: <Image src={"/images/facilities/icon_quarry.png"} alt="Quarry" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_quarry.png"} alt="Quarry" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_quarry.png")} alt="Quarry" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_quarry.png")} alt="Quarry" width={imageScale*4} height={imageScale*4} />
     },
     "library": {
         id: "library",
@@ -203,8 +208,8 @@ export const facilities: { [key: string]: Facility } = {
         requirements: {
             population: 3
         },
-        icon: <Image src={"/images/facilities/icon_library.png"} alt="Library" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_library.png"} alt="Library" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_library.png")} alt="Library" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_library.png")} alt="Library" width={imageScale*4} height={imageScale*4} />
     },
     "barracks": {
         id: "barracks",
@@ -240,8 +245,8 @@ export const facilities: { [key: string]: Facility } = {
                 tech_military_1: 1
             }
         },
-        icon: <Image src={"/images/facilities/icon_barracks.png"} alt="Barracks" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_barracks.png"} alt="Barracks" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_barracks.png")} alt="Barracks" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_barracks.png")} alt="Barracks" width={imageScale*4} height={imageScale*4} />
     },
     "housing": {
         id: "housing",
@@ -264,8 +269,8 @@ export const facilities: { [key: string]: Facility } = {
         requirements: {
             population: 1
         },
-        icon: <Image src={"/images/facilities/icon_housing.png"} alt="Housing" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_housing.png"} alt="Housing" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_housing.png")} alt="Housing" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_housing.png")} alt="Housing" width={imageScale*4} height={imageScale*4} />
     },
     "forge": {
         id: "forge",
@@ -300,7 +305,7 @@ export const facilities: { [key: string]: Facility } = {
                 tech_crafting_1: 1
             }
         },
-        icon: <Image src={"/images/facilities/icon_forge.png"} alt="Forge" width={imageScale} height={imageScale} />,
-        iconBig: <Image src={"/images/facilities/icon_forge.png"} alt="Forge" width={imageScale*4} height={imageScale*4} />
+        icon: <Image src={getImagePath("images/facilities/icon_forge.png")} alt="Forge" width={imageScale} height={imageScale} />,
+        iconBig: <Image src={getImagePath("images/facilities/icon_forge.png")} alt="Forge" width={imageScale*4} height={imageScale*4} />
     }
 };
