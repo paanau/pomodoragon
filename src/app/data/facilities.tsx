@@ -4,7 +4,8 @@ const imageScale = 32;
 
 // Helper function to handle image paths
 const getImagePath = (path: string) => {
-    return path.startsWith('/') ? path : `/${path}`;
+    const fullPath = path.startsWith('/') ? path : `/${path}`;
+    return '/pomodoragon' + fullPath;
 };
 
 export interface FacilityCost {
